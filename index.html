@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon lib -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- sweet alert 2 .css -->
+    <link rel="stylesheet" href="./styles/css librarys/sweet alert 2/sweetalert2.min.css">
+    <!--slick slider lib -->
+    <link rel="stylesheet" href="./styles/css librarys/Slick slider/slick-theme.css">
+    <link rel="stylesheet" href="./styles/css librarys/Slick slider/slick.css">
+    <!-- navbar styles -->
+    <link rel="stylesheet" href="./styles/navbar-style/style.css">
+    <link rel="stylesheet" href="./styles/navbar-style/responsive.css">
+    <!-- main content styles -->
+    <link rel="stylesheet" href="./styles/main-content-style/main.css">
+    <link rel="stylesheet" href="./styles/main-content-style/main-responsive.css">
+    <!-- website title -->
+    <title>Dashbord</title>
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <nav class="navbar">
+        <div class="navbar-row">
+            <!-- navbar-icon -->
+            <div class="navbar-menu-icon-parent">
+                <i class="ri ri-menu-fill sidebar-open-btn"></i>
+            </div>
+            <!-- navbar-logo -->
+            <div class="navbar-logo-parent">
+                <img src="./images/logo-inverse.png" alt="navbar-log" class="navbar-logo">
+            </div>
+            <!-- navbar-dots -->
+            <div class="navbar-dots-parent">
+                <div class="navbar-dots-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- app navbar content -->
+            <div class="app-navbar-content">
+                <div class="app-navbar-content-row">
+                    <!-- left app navbar content -->
+                    <div class="app-navbar-left">
+                        <!-- navbar search box  -->
+                        <div class="search-box-parent">
+                            <div class="search-box">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Type To Search">
+                                </div>
+                                <button id="search-btn" type="button">
+                                    <i class="ri ri-search-line"></i>
+                                </button>
+                            </div>
+                            <div class="search-box-close-btn">
+                                <i class="ri ri-close-line"></i>
+                            </div>
+                        </div>
+                        <!-- navbar menu -->
+                        <div class="navbar-menu-parent">
+                            <ul class="list-menu">
+                                <li class="list-item list-item-drop-down-btn">
+                                    <i class="list-iten-left-icon ri ri-gift-line"></i>
+                                    <span class="list-item-text">Mega Menu</span>
+                                    <i class="list-iten-right-icon ri-arrow-left-s-line"></i>
+                                    <!-- navbar menu drop downs -->
+                                    <div class="list-item-drop-down-menu mega-menu">
+                                        <div class="arrow"></div>
+                                        <div class="row mega-menu-row">
+                                            <div class="col-lg-6 col-xl-4 gap-0">
+                                                <div class="box overview">
+                                                    <h3 class="title overview">
+                                                        Overveiw
+                                                    </h3>
+                                                    <ul class="menu overview">
+                                                        <li class="items overview">
+                                                            <i class="ri-home-line"></i>
+                                                            <span class="text overview">Contacts</span>
+                                                        </li>
+                                                        <li class="items overview">
+                                                            <i class="ri-wallet-fill"></i>
+                                                            <span class="text overview">Incidents</span>
+                                                            <span class="overview badge">5</span>
+                                                        </li>
+                                                        <li class="items overview">
+                                                            <i class="ri-image-line"></i>
+                                                            <span class="text overview">Companies</span>
+                                                        </li>
+                                                        <li class="items overview">
+                                                            <i class="ri-file-line"></i>
+                                                            <span class="text overview">Dashobards</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-4 gap-0">
+                                                <div class="box Marketing">
+                                                    <h3 class="title Marketing">
+                                                        Sales & Marketing
+                                                    </h3>
+                                                    <ul class="menu Marketing">
+                                                        <li class="items Marketing">
+                                                            <span class="text Marketing">Queues</span>
+                                                        </li>
+                                                        <li class="items Marketing">
+                                                            <span class="text Marketing">Resoures Groups</span>
+                                                        </li>
+                                                        <li class="items Marketing">
+                                                            <span class="text Marketing">Goal Metricts</span>
+                                                            <span class="badge Marketing">3</span>
+                                                        </li>
+                                                        <li class="items Marketing">
+                                                            <span class="text Marketing">Campaings</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-4 gap-0">
+                                                <div class="box Favourites">
+                                                    <h3 class="title Favourites">
+                                                        Favourites
+                                                    </h3>
+                                                    <ul class="menu Favourites">
+                                                        <li class="items Favourites">
+                                                            <span class="text Favourites">Reports Conversions</span>
+                                                        </li>
+                                                        <li class="items Favourites">
+                                                            <span class="text Favourites">Quick Start</span>
+                                                            <span class="Favourites badge">New</span>
+                                                        </li>
+                                                        <li class="items Favourites">
+                                                            <span class="text Favourites">Users & Groups</span>
+                                                        </li>
+                                                        <li class="items Favourites">
+                                                            <span class="text Favourites">Proprities</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-item list-item-drop-down-btn">
+                                    <span class="list-item-badge">4</span>
+                                    <span class="list-item-text">Setting</span>
+                                    <i class="list-iten-right-icon ri-arrow-left-s-line"></i>
+                                    <!-- navbar menu drop downs -->
+                                    <div class="list-item-drop-down-menu setting">
+                                        <div class="list-item-drop-down-header setting">
+                                            <div class="list-item-drop-down-overlay setting"></div>
+                                            <div class="list-item-drop-down-header-content">
+                                                <h3 class="drop-down-title">
+                                                    Overview
+                                                </h3>
+                                                <p class="drop-down-text">
+                                                    Dropdwon menus for ever one
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-drop-down-body">
+                                            <h4 class="list-item-drop-down-body-title">KEY FLGURES</h4>
+                                            <p class="list-item-drop-down-body-text">Service Calender</p>
+                                            <p class="list-item-drop-down-body-text">Knowlege BAse</p>
+                                            <p class="list-item-drop-down-body-text">Accounts</p>
+                                        </div>
+                                        <div class="list-item-drop-down-footer">
+                                            <button type="button">Cancel</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-item list-item-drop-down-btn">
+                                    <i class="list-iten-left-icon ri ri-settings-line"></i>
+                                    <span class="list-item-text">Projects</span>
+                                    <i class="list-iten-right-icon ri-arrow-left-s-line"></i>
+                                    <!-- navbar menu drop downs -->
+                                    <div class="list-item-drop-down-menu options">
+                                        <div class="list-item-drop-down-header options">
+                                            <div class="list-item-drop-down-overlay options"></div>
+                                            <div class="list-item-drop-down-header-content options">
+                                                <h3 class="drop-down-title options">
+                                                    Overview
+                                                </h3>
+                                                <p class="drop-down-text">
+                                                    Unlimited options
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-drop-down-body">
+                                            <h4 class="list-item-drop-down-body-title">KEY FLGURES</h4>
+                                            <p class="list-item-drop-down-body-text">Service Calender</p>
+                                            <p class="list-item-drop-down-body-text">Knowlege BAse</p>
+                                            <p class="list-item-drop-down-body-text">Accounts</p>
+                                        </div>
+                                        <div class="list-item-drop-down-footer">
+                                            <button type="button">Cancel</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- left app navbar content  -->
+                    <div class="app-navbar-right">
+
+                        <!-- grid drop down box -->
+                        <div class="drop-down-parent">
+                            <!-- drop down btn -->
+                            <button type="button" class="drop-down-btn blue">
+                                <i class="ri-apps-2-fill drop-icon"></i>
+                            </button>
+
+                            <!-- drop down menu -->
+                            <div class="drop-down-box grid">
+                                <div class="header-drop-down-box grid">
+                                    <div class="drop-down-overlay grid"></div>
+                                    <div class="drop-down-header-content">
+                                        <h3 class="drop-down-title">
+                                            Grid Dashbord
+                                        </h3>
+                                        <p class="drop-down-text">
+                                            Easy grid navigation inside dropdowns
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-drop-down-box">
+                                    <div class="row">
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-global-line"></i>
+                                                </div>
+                                                <span class="outline-text"> Automation</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-bear-smile-line"></i>
+                                                </div>
+                                                <span class="outline-text">Setting</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-settings-line"></i>
+                                                </div>
+                                                <span class="outline-text">Report</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-hourglass-line"></i>
+                                                </div>
+                                                <span class="outline-text">Contact</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-home-line"></i>
+                                                </div>
+                                                <span class="outline-text">Contents</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0 col-sm-6 col-xl-4">
+                                            <div class="outline-box">
+                                                <div class="outline-icon">
+                                                    <i class="ri-24-hours-line"></i>
+                                                </div>
+                                                <span class="outline-text">Activitys</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-drop-down">
+                                    <button type="button" class="type-2 hover">Follow_ups</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- notifacation drop down box -->
+                        <div class="drop-down-parent">
+                            <!-- drop down btn -->
+                            <button type="button" class="drop-down-btn red">
+                                <i class="ri-notification-fill drop-icon"></i>
+                            </button>
+
+                            <!-- drop down menu -->
+                            <div class="drop-down-box notif">
+                                <div class="header-drop-down-box notif">
+                                    <div class="drop-down-overlay notif"></div>
+                                    <div class="drop-down-header-content notif">
+                                        <h3 class="drop-down-title">
+                                            Notifications
+                                        </h3>
+                                        <p class="drop-down-text">
+                                            You have 21 unread messages
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-bts-parent">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="tab-box">
+                                                <button type="button" class="type-1">
+                                                    <span class="type-1-text">Messages</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="tab-box">
+                                                <button type="button" class="type-1 hover">
+                                                    <span class="type-1-text">Events</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="tab-box">
+                                                <button type="button" class="type-1 hover">
+                                                    <span class="type-1-text">System Errors</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="tab-boxs">
+                                                <div class="tabs tab-message">
+                                                    <div class="message-box">
+                                                        <div class="message-row">
+                                                            <div class="message-items">
+                                                                <span class="circle-box red"></span>
+                                                                <p class="message-text">
+                                                                    All Hands Meeting
+                                                                </p>
+                                                            </div>
+                                                            <div class="message-items">
+                                                                <span class="circle-box orange"></span>
+                                                                <p class="message-text">
+                                                                    Something not important
+                                                                </p>
+                                                            </div>
+                                                            <div class="message-items">
+                                                                <span class="circle-box green"></span>
+                                                                <p class="message-text">
+                                                                    Yet another one, at <span class="time">15:00
+                                                                        PM</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="message-items">
+                                                                <span class="circle-box blue"></span>
+                                                                <p class="message-text">
+                                                                    Build the production release
+                                                                    <span class="badge">New</span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="message-images">
+                                                                <img src="./images/1.jpg" alt="message-image">
+                                                                <img src="./images/2.jpg" alt="message-image">
+                                                                <img src="./images/5.jpg" alt="message-image">
+                                                                <img src="./images/9.jpg" alt="message-image">
+                                                                <img src="./images/8.jpg" alt="message-image">
+                                                                <img src="./images/4.jpg" alt="message-image">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs tab-events">
+                                                    <div class="events-box">
+                                                        <div class="events-row">
+                                                            <div class="events-items">
+                                                                <span class="circle-box green events"></span>
+                                                                <div class="event-text-parent">
+                                                                    <h4 class="events">
+                                                                        ALL HANDS MEETING
+                                                                    </h4>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sic amet, today at <span>
+                                                                            12:00 PM
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="events-items">
+                                                                <span class="circle-box orange events"></span>
+                                                                <div class="event-text-parent">
+                                                                    <h6 class="events">
+                                                                        Another meeting today, at <span>12:00 PM</span>
+                                                                    </h6>
+                                                                    <p>
+                                                                        Yet another one, at <span>15:00 PM</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="events-items">
+                                                                <span class="circle-box red events"></span>
+                                                                <h3 class="events-subtitle">
+                                                                    Build the production release
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs tab-error"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-footer">
+                                        <button class="tab-footer-btn" type="button">View Lastest Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- country  drop down box -->
+                        <div class="drop-down-parent">
+                            <!-- drop down btn -->
+                            <button type="button" class="drop-down-btn country">
+                                <span></span>
+                            </button>
+
+                            <!-- drop down menu -->
+                            <div class="drop-down-box country">
+                                <div class="header-drop-down-box country">
+                                    <div class="drop-down-overlay country"></div>
+                                    <div class="drop-down-header-content">
+                                        <h3 class="drop-down-title country">
+                                            Choose Language
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="body-drop-down-box">
+                                    <div class="row country">
+                                        <div class="col-12">
+                                            <div class="country-title">
+                                                <h4>POPULAR LANGUAGES</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box">
+                                                <span class="country-flag US"></span>
+                                                <span class="country-text">USA</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box">
+                                                <span class="country-flag CH"></span>
+                                                <span class="country-text"> Switzerland</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box">
+                                                <span class="country-flag FR"></span>
+                                                <span class="country-text">France</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box">
+                                                <span class="country-flag ES"></span>
+                                                <span class="country-text">Spain</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="country-title others">
+                                                <p>Others</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box active">
+                                                <span class="country-flag DE "></span>
+                                                <span class="country-text">Germany</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 gap-0">
+                                            <div class="country-box">
+                                                <span class="country-flag IT"></span>
+                                                <span class="country-text">Italy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- user drop down box -->
+                        <div class="drop-down-parent">
+                            <!-- drop down btn -->
+                            <button type="button" class="drop-down-btn green">
+                                <i class="ri ri-user-2-line drop-icon"></i>
+                            </button>
+
+                            <!-- drop down men -->
+                            <div class="drop-down-box user">
+                                <div class="header-drop-down-box user">
+                                    <div class="drop-down-overlay user"></div>
+                                    <div class="drop-down-header-content user">
+                                        <h3 class="drop-down-title user">
+                                            User Online
+                                        </h3>
+                                        <p class="drop-down-text">
+                                            Recent Account Activity Overveiw
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-drop-down-box">
+                                    <div class="user-body">
+                                        <div class="users-icon">
+                                            <i class="ri ri-user-line"></i>
+                                        </div>
+                                        <div class="users-counts">
+                                            <h2>344K</h2>
+                                        </div>
+                                        <div class="user-text">
+                                            Profile views since last login
+                                        </div>
+                                        <div class="users-status">
+                                            <span>176%</span>
+                                            <i class="ri ri-arrow-left-line"></i>
+                                        </div>
+                                    </div>
+                                    <div class="chart-box">
+                                        <div class="chart" id="chart"></div>
+                                    </div>
+                                </div>
+                                <div class="footer-drop-down">
+                                    <button type="button" class="user-btn">
+                                        <i class="ri ri-settings-2-line"></i>
+                                        View Datalist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- profile drop down box -->
+                        <div class="drop-down-parent profile">
+
+                            <!-- drop down btn -->
+                            <button class="drop-down-btn profile-dropdown-btn">
+                                <img src="./images/1.jpg" class="profile-img" alt="profile-img">
+                            </button>
+
+                            <!-- drop down menu -->
+                            <div class="drop-down-box profile">
+                                <div class="header-drop-down-box profile">
+                                    <div class="drop-down-overlay profile"></div>
+                                    <div class="drop-down-header-content profile">
+                                        <div class="profile-header-row">
+                                            <img src="./images/1.jpg" alt="profile">
+                                            <div class="profile-info">
+                                                <p class="profile-name">
+                                                    Alina Mcloughlin</p>
+                                                <p class="profile-job">
+                                                    A short profile description</p>
+                                            </div>
+                                        </div>
+                                        <div class="profile-header-btn">
+                                            <button class="type-1 pro" type="button">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body-drop-down-box profile">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="activity-box">
+                                                <h4 class="activity-subtitle">Activity</h4>
+                                                <div class="chat-box">
+                                                    <span class="chat-text">Chat</span>
+                                                    <span class="chat-bage">8</span>
+                                                </div>
+                                                <p class="recover-pass-text">Recover Password</p>
+                                                <p class="my-acc-text">MY ACCOUNT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pro-row">
+                                        <div class="col-12 col-sm-6 ">
+                                            <button class="pro-btn yellow" type="button">Message Inbox</button>
+                                        </div>
+                                        <div class="col-12 col-sm-6 ">
+                                            <button class="pro-btn red" type="button">Message Inbox</button>
+                                        </div>
+                                    </div>
+                                    <div class="footer-drop-down">
+                                        <button type="button" class="type-2 hover">Open Massage</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- server status icon -->
+                        </div>
+                        <div class="server-status-icon">
+                            <i class="ri ri-menu-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- status side bar -->
+    <div class="status-side-bar">
+        <div class="status-side-bar-overlay">
+            <div class="status-side-box">
+                <div class="status-side-content">
+                    <!-- status close btn -->
+                    <div class="status-side-bar-close-btn">
+                        <i class="ri ri-close-line"></i>
+                    </div>
+                    <div class="status-side-bar-header">
+                        <h2 class="status-side-bar-header-title">Servers Status</h2>
+                    </div>
+                    <!-- server status section -->
+                    <div class="server-load-box">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="server-item">
+                                    <p class="server-text">SERVER LOAD 1</p>
+                                    <div class="server-status-circle server-1">
+                                        <span class="server-status-text">51%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="server-item">
+                                    <p class="server-text">SERVER LOAD 1</p>
+                                    <div class="server-status-circle server-2">
+                                        <span class="server-status-text">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="server-item">
+                                    <p class="server-text">SERVER LOAD 1</p>
+                                    <div class="server-status-circle server-3">
+                                        <span class="server-status-text">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- char and counter status section -->
+                    <div class="status-side-bar-chart-parent">
+                        <div class="status-side-bar-chart-box-contant">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="status-side-bar-chart-box">
+                                        <h2>LIVE STATISTICS</h2>
+                                        <div id="status-side-bar-chart"></div>
+                                    </div>
+                                    <div class="row count">
+                                        <div class="col-4">
+                                            <div class="count-box ">
+                                                <span class="number orange">43</span>
+                                                <span class="count-text">Packges</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="count-box">
+                                                <span class="number red">65</span>
+                                                <span class="count-text">Packges</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="count-box ">
+                                                <span class="number green">18</span>
+                                                <span class="count-text">Packges</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- status side bar btns -->
+                    <div class="status-side-bar-buttns">
+                        <button type="button">Escalate lssue</button>
+                        <button type="button">Support Center</button>
+                    </div>
+                    <div class="status-side-bar-file">
+                        <h2 class="status-side-bar-file-title">Servers Status</h2>
+                    </div>
+                    <!-- side bar file menu -->
+                    <ul class="file-menu">
+                        <li class="file-items">
+                            <i class="ri-file-line icon blue"></i>
+                            <span class="file-text">TPSReport.docx</span>
+                            <i class="ri-download-2-line download"></i>
+                        </li>
+                        <li class="file-items">
+                            <i class="ri-file-zip-line icon yellow"></i>
+                            <span class="file-text">Latest_photos.zip</span>
+                            <i class="ri-download-2-line download"></i>
+                        </li>
+                        <li class="file-items">
+                            <i class="ri-file-pdf-2-line icon red"></i>
+                            <span class="file-text">Annual Revenue.pdf</span>
+                            <i class="ri-download-2-line download"></i>
+                        </li>
+                        <li class="file-items">
+                            <i class="ri-file-excel-2-line icon green"></i>
+                            <span class="file-text">Analytics_GrowthReport.xls</span>
+                            <i class="ri-download-2-line download"></i>
+                        </li>
+                    </ul>
+                    <div class="status-side-bar-task">
+                        <h2 class="status-side-bar-task-title">Tasks in Progress</h2>
+                    </div>
+
+                    <!-- side bar task secrion -->
+                    <div class="task-parent">
+                        <div class="task-item orange">
+                            <div class="left-side">
+                                <input type="checkbox">
+                                <div class="task-texts">
+                                    <span class="main-task">Wash the Car</span>
+                                    <span class="task-status">REJECTED</span>
+                                    <i class="writter">Written by Bob</i>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="done">
+                                    <i class="ri ri-check-line"></i>
+                                </div>
+                                <div class="not-done">
+                                    <i class="ri ri-close-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-item gray">
+                            <div class="left-side">
+                                <input type="checkbox">
+                                <div class="task-texts">
+                                    <span class="main-task">Task with hover dropdown menu</span>
+                                    <span class="writter">Alireza Delf</span>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="done">
+                                    <i class="ri ri-check-line"></i>
+                                </div>
+                                <div class="not-done">
+                                    <i class="ri ri-close-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-item blue">
+                            <div class="left-side">
+                                <input type="checkbox">
+                                <div class="task-texts">
+                                    <span class="main-task">
+                                        Badge on the right task</span>
+                                    <i class="writter">This task has show on hover actions!</i>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="done">
+                                    <i class="ri ri-check-line"></i>
+                                </div>
+                                <div class="not-done">
+                                    <i class="ri ri-close-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-item green">
+                            <div class="left-side">
+                                <input type="checkbox">
+                                <div class="task-texts">
+                                    <span class="main-task">Go grocery shopping</span>
+                                    <i class="writter">A short description ...</i>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="done">
+                                    <i class="ri ri-check-line"></i>
+                                </div>
+                                <div class="not-done">
+                                    <i class="ri ri-close-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-side-bar-notif">
+                        <h2 class="status-side-bar-notif-title">Urgent Notifications</h2>
+                    </div>
+                    <!-- side bar notification section -->
+                    <div class="notifiaction-parent-box">
+                        <ul class="notif-menu">
+                            <li class="notif-item">
+                                <span class="circle red"></span>
+                                <span class="notif-text">All Hands Meeting</span>
+                            </li>
+                            <li class="notif-item">
+                                <span class="circle orange"></span>
+                                <span class="notif-text">Yet another one, at 15:00 PM</span>
+                            </li>
+                            <li class="notif-item">
+                                <span class="circle green"></span>
+                                <span class="notif-text">Build the production release</span>
+                            </li>
+                            <li class="notif-item">
+                                <span class="circle blue"></span>
+                                <span class="notif-text">Something not important</span>
+                            </li>
+                            <li class="notif-item images">
+                                <div class="notif-img-container">
+                                    <img src="./images/1.jpg" alt="img">
+                                    <img src="./images/2.jpg" alt="img">
+                                    <img src="./images/4.jpg" alt="img">
+                                    <img src="./images/1.jpg" alt="img">
+                                    <img src="./images/2.jpg" alt="img">
+                                    <img src="./images/5.jpg" alt="img">
+                                </div>
+                            </li>
+                            <li class="notif-item">
+                                <span class="circle block"></span>
+                                <span class="notif-text">This dot has an info state</span>
+                            </li>
+                            <li class="notif-item">
+                                <span class="circle info"></span>
+                                <span class="notif-text">This dot has a dark state</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- all main box -->
+    <main class="main-box">
+
+        <!-- side bar section -->
+        <div class="main-side-bar">
+            <div class="main-side-bar-content">
+
+                <!-- Menu box -->
+                <h3 class="main-side-bar-title">Menu</h3>
+                <ul class="side-bar-menu menu">
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content  side-bar-drop-down-btn">
+                            <i class="ri ri-rocket-2-line menu-icon"></i>
+                            <span>Dashobards</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down "></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-1">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items active">Analytics</li>
+                                <li class="drop-down-items">Commerce</li>
+                                <li class="drop-down-items">Sales</li>
+                                <li class="drop-down-items">Minimal</li>
+                                <li class="drop-down-items">CRM</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content side-bar-drop-down-btn">
+                            <i class="ri-window-line menu-icon"></i>
+                            <span>Pages</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down "></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-1">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items">Login</li>
+                                <li class="drop-down-items">Login Boxed</li>
+                                <li class="drop-down-items">Register</li>
+                                <li class="drop-down-items">Register Boxed</li>
+                                <li class="drop-down-items">Forgot Password</li>
+                                <li class="drop-down-items">Forgot Password Boxed</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content side-bar-drop-down-btn">
+                            <i class="ri-plug-line menu-icon"></i>
+                            <span>Applications</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down "></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-2">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items">Malibox</li>
+                                <li class="drop-down-items">Chat</li>
+                                <li class="drop-down-items">FAQ Section</li>
+                                <li class="drop-down-items">Froums</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- UI box -->
+                <h3 class="main-side-bar-title">UI COMPONENTS</h3>
+                <ul class="side-bar-menu menu">
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content side-bar-drop-down-btn">
+                            <i class="ri-vip-diamond-fill menu-icon"></i>
+                            <span>Element</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down "></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-3">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items active">Buttons</li>
+                                <li class="drop-down-items">Dropdowns</li>
+                                <li class="drop-down-items">Icons</li>
+                                <li class="drop-down-items">Badges</li>
+                                <li class="drop-down-items">Cards</li>
+                                <li class="drop-down-items">Loding Indicators</li>
+                                <li class="drop-down-items">List Groups</li>
+                                <li class="drop-down-items">Navigaton Menus</li>
+                                <li class="drop-down-items">TimeLine</li>
+                                <li class="drop-down-items">Utilites</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content side-bar-drop-down-btn ">
+                            <i class="ri-car-line menu-icon"></i>
+                            <span>Components</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down"></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-4">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items">Tabs</li>
+                                <li class="drop-down-items">Accordions</li>
+                                <li class="drop-down-items">Notifications</li>
+                                <li class="drop-down-items">Modals</li>
+                                <li class="drop-down-items">Loading Blockers</li>
+                                <li class="drop-down-items">Progress Bar</li>
+                                <li class="drop-down-items">Tooltips & Popovers</li>
+                                <li class="drop-down-items">Carousel</li>
+                                <li class="drop-down-items">Calendar</li>
+                                <li class="drop-down-items">Pagination</li>
+                                <li class="drop-down-items">Cont Up</li>
+                                <li class="drop-down-items">Pagination</li>
+                                <li class="drop-down-items">Scrollable</li>
+                                <li class="drop-down-items">Tree View</li>
+                                <li class="drop-down-items">Maps</li>
+                                <li class="drop-down-items">Ratings</li>
+                                <li class="drop-down-items">Image Crop</li>
+                                <li class="drop-down-items">Guided Tours</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content side-bar-drop-down-btn">
+                            <i class="ri-table-line menu-icon"></i>
+                            <span>Tables</span>
+                            <i class="ri ri-arrow-right-s-line arrow-drop-down "></i>
+                        </div>
+                        <div class="side-bar-menu-item-drop-down height-5">
+                            <ul class="side-bar-menu-item-drop-down-menu">
+                                <li class="drop-down-items">Data Tables</li>
+                                <li class="drop-down-items">Regular Tables</li>
+                                <li class="drop-down-items">Grid Tables</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Dashbord box -->
+                <h3 class="main-side-bar-title">DASHBOARD WIDGETS</h3>
+                <ul class="side-bar-menu menu">
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-bar-chart-line menu-icon"></i>
+                            <span>Chart Boxes 1</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-pie-chart-fill menu-icon"></i>
+                            <span>Chart Boxes 2</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-donut-chart-line menu-icon"></i>
+                            <span>Chart Boxes 3</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-line-chart-line menu-icon"></i>
+                            <span>Profile Boxes</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- form box -->
+                <h3 class="main-side-bar-title">Forms</h3>
+                <ul class="side-bar-menu menu">
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-lightbulb-line menu-icon"></i>
+                            <span>Elements</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-gamepad-line menu-icon"></i>
+                            <span>Widgets</span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- chart box -->
+                <h3 class="main-side-bar-title">Chart</h3>
+                <ul class="side-bar-menu menu">
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-flow-chart menu-icon"></i>
+                            <span>ChartJS</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-bubble-chart-line menu-icon"></i>
+                            <span>Apex Charts</span>
+                        </div>
+                    </li>
+                    <li class="slide-bar-menu-item">
+                        <div class="side-bar-menu-item-content">
+                            <i class="ri-bar-chart-horizontal-line menu-icon"></i>
+                            <span>Chart Sparklines</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main section -->
+        <div class="main-section">
+
+            <!-- analytics box -->
+            <div class="analytics-box">
+                <div class="analytics-left-side">
+                    <div class="analytics-icon-box">
+                        <i class="analytics-icon-box ri ri-car-line"></i>
+                    </div>
+                    <div class="analytics-content">
+                        <h3 class="analytics-title">Analytics Dashboard</h3>
+                        <p class="analytics-text">This is an example dashboard created using build-in elements and
+                            components</p>
+                    </div>
+                </div>
+                <div class="analytics-right-side">
+                    <button type="button" class="analytics-button analytics-button-1">
+                        <i class="ri ri-star-fill"></i>
+                    </button>
+                    <button type="button" class="analytics-button analytics-button-2">
+                        <i class="ri ri-book-line"></i>
+                        <span>Buttons</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- all main content -->
+            <div class="all-main-content">
+                <!-- buttons -->
+                <div class="variation-btns">
+                    <button type="button" class="type-1">
+                        <span class="type-1-text">Variation 1</span>
+                    </button>
+                    <button type="button" class="type-1 hover">
+                        <span class="type-1-text">Variation 2</span>
+                    </button>
+                </div>
+
+                <!-- profile performance -->
+                <div class="profile-pro">
+                    <div class="profile-header">
+                        <h4 class="profile-title">Portfolio Performance</h4>
+                        <button type="button">View All</button>
+                    </div>
+                    <div class="profile-body">
+                        <div class="row profile-row">
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="profile-items">
+                                    <div class="profile-icon orange">
+                                        <i class="ri ri-computer-line"></i>
+                                    </div>
+                                    <div class="profile-items-content">
+                                        <span class="profile-subtitle">Cash Deposits</span>
+                                        <span class="profile-number">1,7M</span>
+                                        <span class="profile-status">
+                                            <i class="ri ri-arrow-right-s-line profile-arrow red"></i>
+                                            <span class="pro-status-text red">54.1%</span>
+                                            less earnings
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="profile-items">
+                                    <div class="profile-icon red">
+                                        <i class="ri-presentation-line"></i>
+                                    </div>
+                                    <div class="profile-items-content">
+                                        <span class="profile-subtitle">Invested Dividents</span>
+                                        <span class="profile-number">9M</span>
+                                        <span class="profile-status">
+                                            Grow Rate :
+                                            <i class="ri ri-arrow-right-s-line profile-arrow blue"></i>
+                                            <span class="pro-status-text blue">14.1%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                                <div class="profile-items">
+                                    <div class="profile-icon green">
+                                        <i class="ri-building-line"></i>
+                                    </div>
+                                    <div class="profile-items-content">
+                                        <span class="profile-subtitle">Capital Gains</span>
+                                        <span class="profile-number green">$563</span>
+                                        <span class="profile-status">
+                                            Increased by
+                                            <i class="ri ri-arrow-right-s-line profile-arrow orange"></i>
+                                            <span class="pro-status-text orange">43.99%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-footer">
+                        <button type="button">
+                            <i class="ri ri-check-line"></i>
+                            View Coplete Report
+                        </button>
+                    </div>
+                </div>
+
+                <!-- technical and slider row -->
+                <div class="row first-main-row">
+                    <div class="col-12 col-lg-6 gap-0">
+                        <!-- techincal box -->
+                        <div class="techincal-box">
+                            <!-- techincal header box -->
+                            <div class="technical-header">
+                                <div class="technical-left-side">
+                                    <i class="ri-download-cloud-2-line"></i>
+                                    <h4 class="technical-title">Technical Support</h4>
+                                </div>
+                                <div class="technical-right-side">
+                                    <i class="ri ri-menu-2-fill"></i>
+                                </div>
+                            </div>
+                            <!-- techincal body box -->
+                            <div class="techincal-body slick-slider">
+                                <!-- slide number 1 -->
+                                <div class="techincal-chart-box">
+                                    <div class="technical-chart-content">
+                                        <h5 class="chart-title">New Accounts Since 2018</h5>
+                                        <div class="chart-status">
+                                            <i class="ri ri-arrow-left-s-line green"></i>
+                                            <h5 class="percent-number">78 %</h5>
+                                            <span class="small-number-status green">+14</span>
+                                        </div>
+                                    </div>
+                                    <div class="techincal-chart-1 chart-parent"></div>
+                                </div>
+                                <!-- slide number 2 -->
+                                <div class="techincal-chart-box">
+                                    <div class="technical-chart-content">
+                                        <h5 class="chart-title">Last Year Totla Sales</h5>
+                                        <div class="chart-status">
+                                            <h5 class="percent-number">$ 629</h5>
+                                            <i class="ri ri-arrow-left-s-line blue"></i>
+                                        </div>
+                                    </div>
+                                    <div class="techincal-chart-2 chart-parent"></div>
+                                </div>
+                                <!-- slide number 3 -->
+                                <div class="techincal-chart-box">
+                                    <div class="technical-chart-content">
+                                        <h5 class="chart-title">Helpdesk Tickets</h5>
+                                        <div class="chart-status">
+                                            <h5 class="percent-number orange">34 %</h5>
+                                            <span class="small-number-status orange">Incresae</span>
+                                        </div>
+                                    </div>
+                                    <div class="techincal-chart-3 chart-parent"></div>
+                                </div>
+                            </div>
+                            <div class="techincal-footer">
+                                <span class="sale-prog">
+                                    Sales Progress
+                                </span>
+                                <h5 class="total-ord">Totla Orders</h5>
+                                <div class="expenses-box">
+                                    <span class="expenses-text">Last Year Expenses</span>
+                                    <span class="expenses-price">$1896</span>
+                                </div>
+                                <div class="progress-bar-parent">
+                                    <div class="progress-bar-child"></div>
+                                </div>
+                                <div class="progress-grow-box">
+                                    <span class="grow-text">YoY Growth</span>
+                                    <span class="grow-percent">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 gap-0">
+                        <!-- time line box -->
+                        <div class="timeline-box">
+                            <div class="time-line-header">
+                                <div class="time-line-left-side">
+                                    <i class="ri ri-game-line"></i>
+                                    <h4 class="time-line-title">Time Line Example</h4>
+                                </div>
+                                <div class="time-line-right-side">
+                                    <i class="ri ri-menu-2-fill"></i>
+                                </div>
+                            </div>
+                            <div class="time-line-body">
+                                <ul class="time-line-menu-box">
+                                    <li class="time-line-menu-item red">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item yellow">
+                                        Yet another one, at 15:00 PM
+                                    </li>
+                                    <li class="time-line-menu-item info">
+                                        Build the production release
+                                    </li>
+                                    <li class="time-line-menu-item green">
+                                        Something not important
+                                    </li>
+                                    <li class="time-line-menu-item black">
+                                        This dot has an info state
+                                    </li>
+                                    <li class="time-line-menu-item blue">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item img">
+                                        <div class="time-line-img-container">
+                                            <img src="./images/1.jpg" alt="img">
+                                            <img src="./images/2.jpg" alt="img">
+                                            <img src="./images/4.jpg" alt="img">
+                                            <img src="./images/1.jpg" alt="img">
+                                            <img src="./images/2.jpg" alt="img">
+                                            <img src="./images/5.jpg" alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="time-line-menu-item red">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item yellow">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item info">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item green">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item black">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item blue">
+                                        All Hands Meeting
+                                    </li>
+                                    <li class="time-line-menu-item img">
+                                        <div class="time-line-img-container">
+                                            <img src="./images/1.jpg" alt="img">
+                                            <img src="./images/2.jpg" alt="img">
+                                            <img src="./images/4.jpg" alt="img">
+                                            <img src="./images/1.jpg" alt="img">
+                                            <img src="./images/2.jpg" alt="img">
+                                            <img src="./images/5.jpg" alt="img">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="time-line-footer">
+                                <button type="button">
+                                    <i class="ri ri-check-line"></i>
+                                    View Coplete Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- chart card boxs -->
+                <div class="row second-main-row">
+                    <div class="col-12 col-md-6 col-lg-3 gap-0">
+                        <div class="chart-card-box green">
+                            <p class="price-number">$874</p>
+                            <p class="chart-card-box-text">Sales Last Month</p>
+                            <div class="chart chart-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 gap-0">
+                        <div class="chart-card-box blue">
+                            <p class="price-number">$1283</p>
+                            <p class="chart-card-box-text">Sales Income</p>
+                            <div class="chart chart-2"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 gap-0">
+                        <div class="chart-card-box orange">
+                            <p class="price-number">$1286</p>
+                            <p class="chart-card-box-text">Sales Last Month</p>
+                            <div class="chart chart-3"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 gap-0">
+                        <div class="chart-card-box green">
+                            <p class="price-number">$874</p>
+                            <p class="chart-card-box-text">Sales Last Month</p>
+                            <div class="chart chart-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- table box -->
+                <div class="table-box">
+                    <div class="table-header">
+                        <div class="table-left-side">
+                            <i class="ri ri-computer-line"></i>
+                            <h4 class="table-title">Easy Dynamic Tables</h4>
+                        </div>
+                        <div class="table-right-side">
+                            <i class="ri ri-menu-2-fill"></i>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-search-box">
+                            <label for="search">Search : </label>
+                            <input type="text" id="search" placeholder="Search User">
+                        </div>
+                        <div class="table-elme-box">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Job</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="user-name">Alireza Delf</td>
+                                        <td class="user-age">20</td>
+                                        <td class="user-job">Front End Developer</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Erfan Norozi</td>
+                                        <td class="user-age">25</td>
+                                        <td class="user-job">Football Player</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Reza Gholi</td>
+                                        <td class="user-age">30</td>
+                                        <td class="user-job">Back End Developer</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Mohammad Reza zade</td>
+                                        <td class="user-age">20</td>
+                                        <td class="user-job">Wrasling</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Matin Zarmand</td>
+                                        <td class="user-age">17</td>
+                                        <td class="user-job">Student</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Sadegh Hallafi</td>
+                                        <td class="user-age">35</td>
+                                        <td class="user-job">SEO</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Amin Amiri</td>
+                                        <td class="user-age">20</td>
+                                        <td class="user-job">Disain</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Ahmad Loveimi</td>
+                                        <td class="user-age">55</td>
+                                        <td class="user-job">Former</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Karim Ahmadi</td>
+                                        <td class="user-age">10</td>
+                                        <td class="user-job">None</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user-name">Rasoul Nejad</td>
+                                        <td class="user-age">55</td>
+                                        <td class="user-job">shirt Copmany</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- final box  -->
+                <div class="final-box">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="first-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Total Orders</p>
+                                    <p class="text-box">Last year expenses</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price green">1896</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="second-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Followers</p>
+                                    <p class="text-box">Total Clients Profit</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price red">85,6%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="third-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Followers
+                                    </p>
+                                    <p class="text-box">People Interested</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price blue">$1381K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="first-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Products Sold</p>
+                                    <p class="text-box">Total revenue streams</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price green">2929</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="second-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Total Orders</p>
+                                    <p class="text-box">Last year expenses</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price red">13%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="third-box end-box">
+                                <div class="left-side">
+                                    <p class="title-box">Clients</p>
+                                    <p class="text-box">Total Clients Profit</p>
+                                </div>
+                                <div class="right-side">
+                                    <span class="price blue">$991K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer box -->
+            <div class="footer-box">
+                <div class="footer-left">
+                    <button type="button">
+                        <i class="ri-bar-chart-horizontal-line"></i>
+                    </button>
+                    <button type="button">
+                        <i class="ri-bubble-chart-line"></i>
+                    </button>
+                    <button type="button">
+                        <i class="ri-bar-chart-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- sweet alet lib -->
+    <script src="./js/js librarys/sweet alert 2/sweetalert2.min.js"></script>
+    <!-- apex charts lib -->
+    <script src="./js/js librarys/apex chart/apexcharts.min.js"></script>
+    <!-- Slick slider  -->
+    <script src="./js/js librarys/Jquery/jquery.min.js"></script>
+    <script src="./js/js librarys/Slick slider js/slick.min.js"></script>
+    <script src="./js/js librarys/Jquery migrate/jquery-migrate.min.js"></script>
+    <!-- app.js -->
+    <script src="./js/navbar js/navbar.js"></script>
+    <!-- main content.js -->
+    <script src="./js/main content js/main-content.js"></script>
+</body>
+
+</html>
